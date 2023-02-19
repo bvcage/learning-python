@@ -15,13 +15,12 @@ def main():
     file_names.sort()
 
     # create results folder
-    if not os.listdir(dir).__contains__("results"):
+    if not path.exists("results"):
         os.mkdir("results")
-    results_path = path.join(dir, "results", "results.txt")
 
     # create results file & populate
     try:
-        results_file = open(results_path, "w+")
+        results_file = open("results/results.txt", "w+")
         results_file.write(f"Total byte count: {total_bytes}\n")
         results_file.write("Files list:\n--------------\n")
         results_file.writelines(file_names)

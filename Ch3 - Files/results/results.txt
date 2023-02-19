@@ -1,4 +1,4 @@
-Total byte count: 16835
+Total byte count: 16767
 Files list:
 --------------
 archive.zip
