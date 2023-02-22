@@ -3,8 +3,13 @@
 # LinkedIn Learning Python course by Joe Marini
 #
 
+import urllib.request
+
 def main():
-    pass # this is a placeholder, do-nothing statement
+    web_url = urllib.request.urlopen("http://www.google.com")
+    print(web_url.getcode())
+    data = web_url.read()
+    print(data)
 
 if __name__ == "__main__":
     main()
